@@ -1,0 +1,37 @@
+/*
+Ans-4`
+    In JavaScript, there are two common ways to work with asynchronous operations: then/catch method chaining and async/await. 
+    - Both methods can be used to handle promises, which are objects that represent the eventual completion (or failure) of an asynchronous operation.
+
+                       const fetchAPI = async function(){
+                                try{
+                                    const res = await fetch('https://www.google.com/asyncnawait')
+                                    if(!res.ok){
+                                        throw new Error("Custom Error")
+                                    }
+                                    const data = await res.json()
+                                    console.log(data);
+                                    return "Done with fetchAPI"
+                                } catch(err){
+                                    console.log(err);
+                                    throw new Error("Custom Error")
+                                }
+                            }
+
+                            console.log(fetchAPI())
+
+            promise.all- 
+
+                         let promise1 = new Promise((resolve) =>{
+                                setTimeout(() =>{
+                                resolve("First Promise")
+                                }, 2000)
+                            })
+
+                            let promise2 = Promise.resolve("Second Promise")
+
+                            let returnedPromises = Promise.all([promise1,promise2]).then((res) =>{
+                                console.log(res);
+                            });
+
+                            */

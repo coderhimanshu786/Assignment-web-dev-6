@@ -1,0 +1,29 @@
+/*
+Ans9
+     - The fetch() method in JavaScript is used to request data from a server.
+     - The request can be of any type of API that returns the data in JSON or XML. 
+     - The fetch() method requires one parameter, the URL to request, and returns a promise.
+
+     syntax -:
+
+        fetch('url')           //api for the get request
+                .then(response => response.json())
+                .then(data => console.log(data));
+
+    Parameters: This method requires one parameter and accepts two parameters:
+
+                - URL: It is the URL to which the request is to be made.
+                - Options: It is an array of properties. It is an optional parameter
+
+
+                 // API for get requests
+                            let fetchRes = fetch(
+                            "https://jsonplaceholder.typicode.com/todos/1");
+                            // fetchRes is the promise to resolve
+                            // it by using.then() method
+                            fetchRes.then(res =>
+                                res.json()).then(d => {
+                                    console.log(d)
+                                })
+
+                */

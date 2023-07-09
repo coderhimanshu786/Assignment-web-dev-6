@@ -1,0 +1,38 @@
+/*
+Ans-7
+Keywords in Js-:
+    - The purpose of async / await is to simplify the syntax necessary to consume promise-based APIs. 
+    - The behavior of async / await is similar to combining generators and promises. 
+    - Async functions always return a promise.
+
+for example -:
+            function resolveAfter2Seconds() {
+                                return new Promise(resolve => {
+                                    setTimeout(() => {
+                                    resolve('resolved');
+                                    }, 2000);
+                                });
+                                }
+
+                                async function asyncCall() {
+                                console.log('calling');
+                                const result = await resolveAfter2Seconds();
+                                console.log(result);
+                                // Expected output: "resolved"
+                                }
+
+                                asyncCall();
+
+syntax -: 
+
+                                async function name(param0) {
+                                statements
+                                }
+                                async function name(param0, param1) {
+                                statements
+                                }
+                                async function name(param0, param1, /* … ,*/ paramN) {
+                                statements
+                                }
+
+                                */

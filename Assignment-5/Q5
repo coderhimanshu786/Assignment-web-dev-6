@@ -1,0 +1,52 @@
+/*
+Ans-5
+    - The callback function passed is used to sum up the elements of the array.
+      After 2 seconds have passed, the sum of the array is printed which is 9.
+
+      for example - 
+      
+                            // Main function
+                            const mainFunction = (callback) => {
+                                setTimeout(() => {
+                                    callback([2, 3, 4]);
+                                }, 2000)
+                            }
+                            
+                            // Add function
+                            const add = (array) => {
+                                let sum = 0;
+                                for(let i of array) {
+                                    sum += i;
+                                }
+                                console.log(sum);
+                            }
+                            
+                            // Calling main function
+                            mainFunction(add);
+     
+     - Callback Hell: Callback Hell is essentially nested callbacks stacked below one another forming a pyramid structure.
+            for example - 
+
+                                         <script>
+                                            let words = document.querySelectorAll(".word");
+                                        
+                                            const callBackHellAll = (callBackHell) => {
+                                                setTimeout(() => {
+                                                    callBackHell(words[0]);
+                                                    setTimeout(() => {
+                                                        callBackHell(words[1]);
+                                                        setTimeout(() => {
+                                                            callBackHell(words[2]);
+                                                        }, 1000)
+                                                    }, 1000)
+                                                }, 1000)
+                                            }
+                                        
+                                            const callBackHell = (word) => {
+                                                word.classList.add("callBackHell");
+                                            }
+                                        
+                                            callBackHellAll(callBackHell);
+                                        </script>
+
+                                        */

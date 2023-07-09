@@ -1,0 +1,31 @@
+/*
+Ans-1
+    - Synchronous happens at the same time. Asynchronous doesn't happen at the same time. 
+- 
+    - With synchronous learning, participants can receive immediate feedback. 
+    - 
+    - With asynchronous learning, the participants can learn at their own pace.
+- 
+    - In Synchronous Transmission, data is sent in form of blocks or frames.
+- 
+    - In Asynchronous Transmission, data is sent in form of byte or character.
+
+    
+- 
+    The benefits of synchronous learning
+                
+            - Interaction between participants.
+            - Exchange of knowledge and experience between participants.
+            - Real-time feedback for the instructor.
+            - Training happens on a fixed schedule.
+            --Examples: Telephonic conversations, Video conferencing, Online gaming.
+
+    The benefits of asynchronous learning
+                
+            - Participants can learn in their own time and schedule
+            - Less work for trainers and HR managers
+            - Automated tasks reduce repetitive work such as giving online classes and grading exams
+            - Employees and customers spend less time in a classroom or amphitheater during work hours.
+            - Examples: Email, File transfer,Online forms.
+
+            */

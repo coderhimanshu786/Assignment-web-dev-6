@@ -1,0 +1,21 @@
+/*
+Ans-8
+    - A try block is the block of code (contains a set of statements) in which exceptions can occur; it's used to enclose the code that might throw an exception.
+    -  The try block is always followed by a catch block, which handles the exception that occurs in the associated try block.
+
+
+for example-:
+                                try {
+                                    try {
+                                        throw new Error("oops");
+                                    } catch (ex) {
+                                        console.error("inner", ex.message);
+                                        throw ex;
+                                    } finally {
+                                        console.log("finally");
+                                    }
+                                    } catch (ex) {
+                                    console.error("outer", ex.message);
+                                    }
+
+                */

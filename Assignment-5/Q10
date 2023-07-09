@@ -1,0 +1,32 @@
+/*
+Ans-10
+    The async function declaration creates a binding of a new async function to a given name. The await keyword is permitted within the function body, enabling asynchronous, promise-based behavior to be written in a cleaner style and avoiding the need to explicitly configure promise chains.
+
+    syntax -:
+
+                        async function name(param0) {
+                            statements
+                            }
+                            async function name(param0, param1) {
+                            statements
+                            }
+                            async function name(param0, param1, /* … ,*/ paramN) {
+                            statements
+                            }
+
+     Parameters -:
+
+                name
+                The function's name.
+
+                param Optional
+                The name of an argument to be passed to the function.
+
+                statements Optional
+                The statements comprising the body of the function. The await mechanism may be used.
+
+             An async function declaration creates an AsyncFunction object. Each time when an async function is called, it returns a new Promise which will be resolved with the value returned by the async function, or rejected with an exception uncaught within the async function.
+
+             The purpose of async/await is to simplify the syntax necessary to consume promise-based APIs. The behavior of async/await is similar to combining generators and promises.
+
+             */
